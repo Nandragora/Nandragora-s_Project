@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F7F8F0;
+    block-size: border-box;
+    color: #355872  ;
+}
+
+.container-header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 70px;
+    float: left;
+    padding: 14px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin:0 50px;
+    text-transform: uppercase;
+    margin-top: 47px;
+
+}
+nav a {
+    text-decoration: none;
+    color: #355872;
+    font-weight: 200;
+}
+
+nav a:hover {
+    color: #355872;
+    font-weight: 500;
+    border-bottom: 2px solid #355872;
+}
+
+.line {
+    height: 2px;
+    background-color: #355872;
+    margin: 0 auto;
+    width: 100%;;
+    display: flex;
+}
+
+.quote {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.creator {
+  height: 100%;
+  display: flex;
+ flex-direction: column;
+justify-content: center;
+}
+
+.works h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.galery {
+    padding-top: 25px;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   gap: 20px;
+   padding-bottom: 25px;
+}
+
+.galery img {
+    height: 585px;
+   width: 439px;
+     border-radius: 35px;
+     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+     will-change: transform;
+}
+
+.galery img:hover {
+    transform: scale(1.02);
+}
+
+.bord {
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 20px;
+    border-top: 2px solid #355872;
+   
+}
+
+th, tr {
+    border-left: 2px solid #355872;
+    padding: 15px 20px;
+    text-align: center;
+     font-weight: normal;
+         border-right: 2px solid #355872;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-header {
+        width: 95%;
+    }
+
+    .logo {
+        height: 50px;
+        padding: 10px 0;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+        margin-top: 20px;
+    }
+
+    .galery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .galery img {
+        height: auto;
+        width: 100%;
+        max-width: 439px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, tr {
+        padding: 10px;
+    }
+}
+
