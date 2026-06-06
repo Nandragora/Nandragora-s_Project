@@ -74,6 +74,7 @@ justify-content: center;
 }
 .galery {
     padding-top: 25px;
+    padding-left: 25px;
    display: grid;
    grid-template-columns: auto auto auto;
    gap: 20px;
